@@ -1,0 +1,1290 @@
+/******************************************************************
+
+
+Stylesheet: Admin Panel Stylesheet
+
+******************************************************************/
+
+
+
+body
+
+{
+
+	background-color:#000;
+
+	color:#fff;
+
+	font-family:'Open Sans', sans-serif;
+
+	font-weight:300;
+
+}
+
+
+
+.clear
+
+{
+
+	clear:both;
+
+}
+
+
+
+p
+
+{
+
+	margin:0;
+
+}
+
+
+
+a
+
+{
+
+	color:#555;
+
+}
+
+
+
+#login
+
+{
+
+	margin:auto;
+
+	width:220px;
+
+}
+
+
+
+#login button
+
+{
+
+	margin:20px 10px;
+
+}
+
+
+
+#login input
+
+{
+
+	width:195px;
+
+}
+
+
+
+#login .ytv_pre_login_info
+
+{
+
+	background:#CC0000;
+
+	padding:10px;
+
+}
+
+
+
+select
+
+{
+
+	border:none;
+
+	clear:both;
+
+	float:left;
+
+	height:20px;
+
+	margin:0 10px;
+
+}
+
+a.pale
+
+{
+
+	color: #fff;
+
+	text-decoration: none;
+
+}
+
+a.pale:hover
+
+{
+
+	color: #000;
+
+	text-decoration: none;
+
+	cursor:pointer;
+
+}
+
+fieldset
+
+{
+
+	border:none;
+
+	margin:0;
+
+	padding:0;
+
+}
+
+
+
+textarea
+
+{
+
+	border:none;
+
+	clear:both;
+
+	color:#555;
+
+	float:left;
+
+	font-family:inherit;
+
+	font-size:14px;
+
+	font-weight:700;
+
+	margin-left:10px;
+
+	max-width:475px;
+
+	padding-left:5px;
+
+}
+
+
+
+input[type=text]
+
+{
+
+	border:none;
+
+	clear:both;
+
+	color:#555;
+
+	float:left;
+
+	font-family:inherit;
+
+	font-size:14px;
+
+	font-weight:700;
+
+	height:20px;
+
+	margin-left:10px;
+
+	padding-left:5px;
+
+	width:220px;
+
+}
+
+
+
+input[type=password]
+
+{
+
+	border:none;
+
+	clear:both;
+
+	color:#555;
+
+	float:left;
+
+	font-family:inherit;
+
+	font-size:14px;
+
+	font-weight:700;
+
+	height:20px;
+
+	margin-left:10px;
+
+	padding-left:5px;
+
+	width:220px;
+
+}
+
+
+
+
+
+
+
+input[type=text].input_small
+
+{
+
+	clear:none;
+
+	width:20px;
+
+}
+
+
+
+input[type=text].input_size
+
+{
+
+	width:40px;
+
+}
+
+
+
+input[type=checkbox]
+
+{
+
+	display:none;
+
+	float:left;
+
+}
+
+
+
+#ie8 input[type=checkbox]
+
+{
+
+	display:inherit;
+
+	position:absolute;
+
+	top:-1500px;
+
+}
+
+
+
+label
+
+{
+
+	clear:both;
+
+	float:left;
+
+	padding:10px;
+
+}
+
+
+
+table
+
+{
+
+	float:left;
+
+}
+
+
+
+table input[type=text]
+
+{
+
+	font-size:12px;
+
+	height:30px;
+
+	width:400px;
+
+}
+
+
+
+.heading
+
+{
+
+	background-color:#000;
+
+	overflow:auto;
+
+	position:fixed;
+
+	top:0;
+
+	width:100%;
+
+	z-index:2;
+
+}
+
+
+
+.main
+
+{
+
+margin-top:70px;
+margin-left: 300px;
+overflow:auto;
+position: relative;
+
+}
+.leftcol
+
+{
+
+	
+	overflow:auto;
+	float: left;
+	width: 300px;
+position: absolute;
+
+}
+
+
+.heading_title
+
+{
+
+	float:left;
+
+	font-size:20px;
+
+	margin-left:32px;
+
+	margin-top:15px;
+
+}
+
+.broadcasting_panel
+
+{
+	background-color:#222;
+	float:left;
+	margin:50px 20px 0;
+	padding:10px;
+	position:relative;
+	width:250px;
+
+}
+.broadcasting_search
+
+{
+	background-color:#222;
+	float:left;
+	margin:350px 20px 0;
+	padding:10px;
+	position:relative;
+	width:250px;
+}
+.broadcasting_list
+
+{
+
+	background-color:#222;
+
+	float:left;
+
+	margin:50px 20px 0;
+
+	padding:10px;
+
+	position:relative;
+
+	width:250px;
+
+}
+
+
+
+a.bcselector
+
+{
+
+	display:inline-block;
+
+	/*float:left;*/
+
+	margin:10px;
+
+	color:#fff;
+
+	text-decoration:none;
+
+}
+
+
+
+a.bcselector:hover
+
+{
+
+	color:#000;
+
+	cursor:pointer;
+
+}
+
+
+
+.broadcasting_new
+
+{
+
+	background-color:#222;
+
+	float:left;
+
+	margin:50px 20px 0;
+
+	padding:10px;
+
+	position:relative;
+
+	width:250px;
+
+}
+
+
+
+.daysblock
+
+{
+
+	clear:both;
+
+	float:left;
+
+	padding:0 10px;
+
+}
+
+
+
+.time,#editbroadcasting .time
+
+{
+
+	clear:both;
+
+	float:left;
+
+	font-family:inherit;
+
+	font-size:14px;
+
+	overflow:auto;
+
+}
+
+
+
+.time p,#editbroadcasting .time p
+
+{
+
+	float:left;
+
+	margin-left:10px;
+
+}
+
+
+
+.daysblock label,#loop,#controls
+
+{
+
+	background-color:#FFF;
+
+	clear:none;
+
+	color:#ccc;
+
+	cursor:pointer;
+
+	font-size:14px;
+
+	font-weight:700;
+
+	height:20px;
+
+	margin-right:10px;
+
+	padding:0;
+
+	text-align:center;
+
+	width:20px;
+
+}
+
+
+
+.daysblock label:hover,#loop:hover,#controls:hover
+
+{
+
+	background-color:#CC0000;
+
+}
+
+
+
+.broadcasting_main
+
+{
+
+	background-color:#222;
+
+	float:left;
+
+	margin:50px 20px 0;
+
+	padding:10px 10px 20px;
+
+	position:relative;
+
+	width:500px;
+
+}
+
+
+
+.broadcasting_main .bcadd
+
+{
+
+	margin:-5px 0 20px;
+
+}
+
+
+
+.broadcasting_main .title,.broadcasting_list .title,.broadcasting_new .title, .broadcasting_panel .title
+
+{
+
+	font-size:30px;
+
+	position:absolute;
+
+	top:-45px;
+
+}
+
+
+
+.broadcasting_main .startingtime
+
+{
+
+	font-size:16px;
+
+	margin-bottom:10px;
+
+}
+
+
+
+.videoentry
+
+{
+
+	height:90px;
+
+	overflow:auto;
+
+	position:relative;
+
+}
+
+
+
+.videoentry:hover
+
+{
+
+	background-color:#CC0000;
+
+}
+
+
+
+.videoentry input
+
+{
+
+	float:left;
+
+	font-size:12px;
+
+	height:30px;
+
+	left:190px;
+
+	margin:0 10px;
+
+	position:static;
+
+	top:35px;
+
+	width:380px;
+
+}
+
+
+
+.videoadd input
+
+{
+
+	clear:none;
+
+	font-size:12px;
+
+	margin-right:10px;
+
+	width:310px;
+
+}
+
+
+
+.videoadd p
+
+{
+
+	float:left;
+
+}
+
+
+
+.videourl
+
+{
+
+	float:left;
+
+	padding:10px;
+
+}
+
+
+
+.videoentry .save
+
+{
+
+	margin:-10px 0;
+
+}
+
+
+
+.broadcasting_main .videoinfos
+
+{
+
+	float:left;
+
+	font-size:14px;
+
+	padding:10px;
+
+	width:280px;
+
+}
+
+
+
+.videoinfos .videoname
+
+{
+
+	font-weight:700;
+
+	margin-bottom:10px;
+
+}
+
+
+
+.broadcasting_main .thumbnail
+
+{
+
+	float:left;
+
+}
+
+
+
+.videoactions
+
+{
+
+	float:left;
+
+	width:80px;
+
+}
+
+
+
+.videoactions button
+
+{
+
+	margin:10px 10px 0 0;
+
+}
+
+
+
+.metrobtn
+
+{
+
+	background-color:transparent;
+
+	background-position:-3px -3px;
+
+	background-size:30px;
+
+	border:3px solid #FFF;
+
+	border-radius:15px;
+
+	color:#fff;
+
+	display:inline-block;
+
+	float:left;
+
+	font-size:14px;
+
+	height:30px;
+
+	text-decoration:none;
+
+	width:30px;
+
+}
+
+
+
+#ie8 .metrobtn 
+
+{
+
+	background-position:-12px -12px;
+
+}
+
+
+
+.metrobtn:active
+
+{
+
+	position:relative;
+
+	top:1px;
+
+}
+
+
+
+.metrobtn:hover
+
+{
+
+	cursor:pointer;
+
+}
+
+
+
+.btn_small
+
+{
+
+	background-position:-2px -2px;
+
+	background-size:20px;
+
+	border:2px solid #FFF;
+
+	height:20px;
+
+	width:20px;
+
+}
+
+
+
+#ie8 .btn_small 
+
+{
+
+	background-position:-16px -16px;
+
+}
+
+
+
+.btn_big
+
+{
+
+	background-position:-4px -4px;
+
+	background-size:48px;
+
+	border:4px solid #FFF;
+
+	border-radius:25px;
+
+	height:48px;
+
+	width:48px;
+
+}
+
+
+
+#ie8 .btn_big
+
+{
+
+	background-position: -4px -4px;
+
+}
+
+
+
+.save
+
+{
+
+	background-image:url(icons/check.png);
+
+}
+
+
+
+.save:hover
+
+{
+
+	background-color:#0EAF15;
+
+}
+
+
+
+.videoedit
+
+{
+
+	background-image:url(icons/edit.png);
+
+}
+
+
+
+.videoedit:hover
+
+{
+
+	background-color:#378de5;
+
+}
+
+
+
+.videoremove
+
+{
+
+	background-image:url(icons/cancel.png);
+
+}
+
+
+
+.videoremove:hover
+
+{
+
+	background-color:#c62d1f;
+
+}
+
+
+
+.videoeditsave
+
+{
+
+	background-image:url(icons/check.png);
+
+	float:right;
+
+	margin:-8px 10px 0 0;
+
+}
+
+
+
+.videoeditsave:hover
+
+{
+
+	background-color:#0EAF15;
+
+}
+
+
+
+.videoup
+
+{
+
+	background-image:url(icons/up.png);
+
+}
+
+
+
+.videoup:hover
+
+{
+
+	background-color:#303030;
+
+}
+
+
+
+.videodown
+
+{
+
+	background-image:url(icons/down.png);
+
+}
+
+
+
+.videodown:hover
+
+{
+
+	background-color:#303030;
+
+}
+
+
+
+.videoadd
+
+{
+
+	margin:5px;
+
+	overflow:auto;
+
+	padding:5px;
+
+	position:relative;
+
+}
+
+
+
+.add
+
+{
+
+	background-image:url(icons/add.png);
+
+	margin:2px 2px 0 455px;
+
+}
+
+
+
+.add:hover
+
+{
+
+	background-color:#303030;
+
+}
+
+
+
+.bcadd
+
+{
+
+	background-image:url(icons/add.png);
+
+	margin:20px 0 10px 10px;
+
+}
+
+
+
+.bcadd:hover
+
+{
+
+	background-color:#303030;
+
+}
+
+
+
+.bcsavesettings
+
+{
+
+	background-image:url(icons/check.png);
+
+	border:4px solid #FFF;
+
+	bottom:15px;
+
+	margin:20px 0 10px 10px;
+
+	position:absolute;
+
+	right:30px;
+
+}
+
+
+
+.bcsavesettings:hover
+
+{
+
+	background-color:#0EAF15;
+
+}
+
+
+
+.bcsavesettings:active
+
+{
+
+	bottom:14px;
+
+	position:absolute;
+
+	top:inherit;
+
+}
+
+
+
+.bcsettings
+
+{
+
+	background-image:url(icons/settings.png);
+
+	float:right;
+
+	margin:-48px 100px 0 0;
+
+}
+
+
+
+.bcsettings:hover
+
+{
+
+	background-color:#378de5;
+
+}
+
+
+
+.bcimport
+
+{
+
+	background-image:url(icons/download.png);
+
+	float:right;
+
+	margin:-48px 50px 0 0;
+
+}
+
+
+
+.bcimport:hover
+
+{
+
+	background-color:#0EAF15;
+
+}
+
+
+
+.bcdelete
+
+{
+
+	background-image:url(icons/delete.png);
+
+	float:right;
+
+	margin:-48px 0 0;
+
+}
+
+
+
+.bcdelete:hover
+
+{
+
+	background-color:#c62d1f;
+
+}
+
+
+
+.footer
+
+{
+
+	float:left;
+
+	margin-top:50px;
+
+}
+
+
+
+.bar
+
+{
+
+	background:#FFF;
+
+	border:2px solid #FFF;
+
+	float:left;
+
+	height:20px;
+
+	margin-bottom:20px;
+
+	overflow:auto;
+
+	position:relative;
+
+}
+
+
+
+.bar .inside
+
+{
+
+	background:#303030;
+
+	height:50%;
+
+	position:absolute;
+
+	top:10px;
+
+}
+
+
+
+.inside_up
+
+{
+
+	width:100%;
+
+}
+
+
+
+.inside_up span
+
+{
+
+	background:transparent;
+
+	border-left:1px solid #CCC;
+
+	color:#aaa;
+
+	float:left;
+
+	font-size:8px;
+
+	font-weight:700;
+
+	height:20px;
+
+	line-height:6px;
+
+	text-align:right;
+
+	width:8.1%;
+
+}
+
+
+
+.inside_up span:first-child
+
+{
+
+	border:none;
+
+}

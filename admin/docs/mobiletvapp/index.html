@@ -1,0 +1,210 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>BrandCoder Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">BrandCoder Documentation v1.5</h3>
+		
+		<hr>
+		
+		<h1 class="center">Branding and Compiling Mobile TV Application</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Last Updated: 01/24/2015<br>
+					Version: BrandCoder V1.5<br>
+					Platform: Android<br>
+					Support: <a href="mailto:support@brandcoder.com">support@brandcoder.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">The scope of this document covers how to rebrand and compile the custom mobile TV application included with your BrandCoder License. Documentation applies to the following versions: Beginner Edition, Start-Up Edition and Enterprise Edition Version 1.5 or newer.</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Sections</h2>
+		<h3>I. Project Files</h3>
+		<ol>
+			<li><a href="#javaSources">Java Sources</a></li>
+			<li><a href="#resources">Resources</a>
+				<ul>
+					<li><a href="#drawables">Drawables</a></li>
+				</ul>
+			</li>
+				
+			<li><a href="#others">Others</a></li>
+		</ol>
+		<h3>II. Import and Configure the App</h3>
+		<ol>
+			<li><a href="#import">Import the projects into Eclipse</a></li>
+			<li><a href="#supportlib">Support Library</a></li>
+			<li><a href="#faqs">FAQs</a></li>
+		</ol>
+		<h3>III. Branding and Channels</h3>
+		<ol>
+			<li><a href="#general">Splash Screen</a></li>
+			<li><a href="#calendar">Scrollable Tabs</a></li>
+		</ol>
+	
+		
+		<h3 id="javaSources"><strong>1. Java Sources</strong> - <a href="#toc">top</a></h3>
+		<p><h3>Package com.brandcoder.*</h3>
+			<i>Note: The package name will vary depending on the license version that you purchased</i> </p>
+		<ul>
+			<li><strong>IntroActivity.java</strong> - This is the first <code>Activity</code> which will be started when the application is opened. It contains an image file to display to the users which presents your brand image at the launch of the app.</li>
+			<li><strong>ChannelsActivity.java</strong> - This is the main <code>Activity</code> which handles the menu and channel display.</li>
+			<li><strong>ProgressIndicator.java</strong> - This class handles the loading gif animation that is displayed while the channels are loading.  </li>
+		</ul>
+		
+		<hr>
+
+		<h3 id="resources"><strong>2. Resources</strong> - <a href="#toc">top</a></h3>
+		
+		<h4 id="xmlFiles"><strong>2.1. XML Files</strong> - <a href="#toc">top</a></h3>
+		<p><h3>Folder "layout"</h3></p>
+		<ul>
+			<li><strong>main.xml</strong> - layout of <code>ChannelsActivity</code></li>
+			<li><strong>splash.xml</strong> - layout of <code>IntroActivity</code></li>
+			<li><strong>horslidingdrawer.xml</strong> - layout of the horizontal <code>SlidingDrawer</code> (menu that opens horizontally)</li>
+			<li><strong>verslidingdrawer.xml</strong> - layout of the vertical <code>SlidingDrawer</code> (menu that opens vertically)</li>
+			<li><strong>tabcontent.xml</strong> - layout of a single tab</li>
+			<li><strong>tabimage.xml</strong> - layout of the image in a single tab</li>
+			<li><strong>tabtext.xml</strong> - layout of the text in a single tab</li>
+		</ul>
+
+		<p><h3>Folder "values"</h3></p>
+		<ul>
+			<li><strong>strings.xml</strong> - all text values of the application</li>
+			<li><strong>colors.xml</strong> - the gradient colors of the loading bar that is displaying when some url is currently loading</li>
+		</ul>
+		<h4 id="drawables"><strong>2.2. Drawables</strong> - <a href="#toc">top</a></h3>
+		
+		<p>The drawable files are placed according to the device resolution in the following folders: <i>drawable</i>, <i>drawable-mdpi</i>, <i>drawable-ldpi</i>, <i>drawable-hdpi</i>, <i>drawable-xhdpi</i>.</p>
+		<ul>
+			<li><strong>openarrow.png</strong>  - drawable with the arrow that opens the bottom sliding menu</li>
+			<li><strong>closearrow.png</strong>  - drawable with the arrow that closes the bottom sliding menu</li>
+			<li><strong>horopenarrow.png</strong>  - drawable with the arrow that opens the side sliding menu</li>
+			<li><strong>horclosearrow.png</strong>  - drawable with the arrow that closes the side sliding menu</li>
+			<li><strong>splash.png</strong>  - drawable with the image for the loading splash screen</li>
+			<li><strong>tab_*.png</strong>  - drawable with the image for one of the channel tabs in the menu, where * is the name of the tab</li>
+			<li><strong>ic_launcher.png</strong>  - icon of the application</li>
+			<li><strong>ic_launcher_red.png</strong>  - icon of the application in red color</li>
+		</ul>
+		<hr>
+		
+		<h3 id="others"><strong>3. Others Files</strong> - <a href="#toc">top</a></h3>
+		<ul>
+			<li><strong>AndroidManifest.xml</strong>  - the manifest of BrandCoder application</li>
+			<li><strong>project.properties</strong>  - properties of the BrandCoder application</li>
+		</ul>
+		<hr><br>
+		<h3>II. Import and Configure the App</h3>
+		<h3 id="import"><strong>1. Import the project into Eclipse</strong> - <a href="#toc">top</a></h3>
+		<p><strong>Step 1:</strong> Extract the content from the .zip file that you've just downloaded.
+            Start Eclipe and click on File &gt; Switch Workspace &gt; Other and locate a newly created folder, which we will use as workspace folder and click OK.</p>
+         <p><strong>Step 2:</strong> Follow the instructions described in the video below</p>
+         <p>  <video width="720" height="480" controls>
+  <source src="https://s3.amazonaws.com/brandcoder/building_app.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video></p>
+		<h3 id="supportlib"><strong>2. Support Library</strong> - <a href="#toc">top</a></h3>
+		<p>Install the latest version of the the <i>Android Support Library</i> for each project in the workspace.</p>
+		<p><img src="assets/images/supportlib.png"></p>
+		<p>Please note that the main project is <em>IntroAcitivity</em> and the <em>google-play-service_lib</em> is the library for AdMob.</p>
+		<h3 id="faqs"><strong>3. FAQs</strong> - <a href="#toc">top</a></h3>
+		<p>Frequently Asked Questions: <a href="#faqs" target="_blank">FAQs</a> </p>
+<hr><br>
+		<h3>III. How to Customize BrandCoder Mobile TV Android Application</h3>
+		<h3 id="general"><strong>1. Splash Screen</strong> - <a href="#toc">top</a></h3>
+		
+		<p>To customize the <strong>Splash Screen</strong> for your own application do the following:</p>
+		<ol>
+			<li>Replace the <i>splash.png</i> file in folders <i>drawable, drawable-xhdpi, drawable-hdpi, drawable-mdpi and drawable-ldpi</i> with your own splash image.</li>
+		</ol>
+		
+		<h3 id="url"><strong>2. License Key</strong> - <a href="#toc">top</a></h3>
+		
+		<p>To set your <strong>License Key</strong> for your own application do the following:</p>
+		<ol>
+			<li>Replace the string constant in <i>ChannelsActivity.java</i> file in package <i>com.brandcoder.*</i> with your own license key.</li>
+			<img src="key.png"></img>
+		</ol>
+		
+		<h3 id="general"><strong>3. Scrollable Channel Tabs</strong> - <a href="#toc">top</a></h3>
+		
+		<p>To add or modify a single <strong>Tab</strong> do the following:</p>
+		<ol>
+			<li>Add a new image for the tab icon in folder <i>drawable</i>.</li>
+			<li>Add a new <code>TabContent</code> object in method <code>getTabsContent()</code> in <i>ChannelsActivity.java</i> file in package <i>com.brandcoder.*</i>
+			as shown in the image below. The first parameter in red is the id of the resource of the image added in step 1. 
+			The second parameter is the text of the tab. The third one is the URL that is invoked when clicking on the tab.
+			</li>
+			<img src="tab.png"></img>
+		</ol>
+		
+		<p>To remove a single <strong>Tab</strong> do the following:</p>
+		<ol>
+			<li>Remove a <code>TabContent</code> object in method <code>getTabsContent()</code> in <i>ChannelsActivity.java</i> file in package <i>com.brandcoder.*</i>.
+			</li>
+		</ol>
+		<hr>
+<h3 id="general"><strong>4. Enable AdMob Advertisement</strong> - <a href="#toc">top</a></h3>
+		<p>AdMob advertisement is very easy to configure and once it is done the banners will ne shown in the top of the screen.To enable <strong>AdMob</strong> advertisement do the following:</p>
+		<ol>
+			<li>Set the boolean field <code>isAdmobEnable</code> in the file <i>ChannelsActivity.java</i> to <code>true</code>. By default the filed is <code>false</code> and the AdMob advertisement is not enabled. The field is shown in the bottom image.
+			</li>
+				<img src="isadmob.png"></img>
+			<li>Fill your AdMob Publisher id in the field <code>MY_AD_UNIT_ID</code>. You can find your AdMob Publisher id in your setting page in the admob website. The field is shown in the bottom image. 
+			</li>
+				<img src="myaddunit.png"></img>
+		</ol>
+<h3 id="general"><strong>5. Define the position of the tabs.</strong>  - <a href="#toc">top</a></h3>
+<p>By default tabs are displayed in the bottom of the screen. If you like the way they are positioning you should not do anything. If you want to move them to the righ of the screen do the following: </p>
+		<ol>
+			<li>Change the value of the field <code>sliderBottom</code> in the file <i>ChannelsActivity.java</i> to <code>false</code>.The field is shown in the bottom image.
+			</li>
+			<img src="sliderbottom.png"></img>
+		</ol>
+<h3 id="general"><strong>6. Define the gradient color of the top loading bar.</strong>  - <a href="#toc">top</a></h3>
+<p>By default the gradient color is dark to light blue. If you want to change it to any other color open the <i>colors.xml</i> file which is located in the <i>res/values</i> folder in the project and do the following: </p>
+		<ol>
+			<li>Change the values of the colors as you like them to be displayed
+			</li>
+			<img src="colors.png"></img>
+		</ol>
+<h3 id="general"><strong>7. Add Rate functionality for your app.</strong>  - <a href="#toc">top</a></h3>
+<p>If you want your application to have a link to the Android Rate functionality open the <i>ChannelsActivity.java</i> file and do the following: </p>
+		<ol>
+			<li>Uncomment the lines shown in the picture below
+			</li>
+			<img src="webviewcategories.png"></img>
+		</ol>		
+
+		
+		<p class="append-bottom alt large"><strong><a href="http://brandcoder.com">BrandCoder V1.5</a></strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

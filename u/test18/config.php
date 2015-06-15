@@ -1,0 +1,1 @@
+<?php $adminu = 'test18'; $adminp = 'password'; ?>

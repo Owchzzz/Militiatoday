@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+                    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  
+  <script>
+var previous = "";
+
+setInterval(function() {
+    var ajax = new XMLHttpRequest();
+    ajax.onreadystatechange = function() {
+        if (ajax.readyState == 4) {
+            if (ajax.responseText != previous) {
+                //alert("file changed!");
+                $('body', parent.window.frames['special'].document).load("sendurl.php");
+		//$('body', parent.document).load("sendurl.php");	
+                previous = ajax.responseText;
+            }
+        }
+    };
+    ajax.open("POST", "sendurl.php", true); //Use POST to avoid caching
+    ajax.send();
+}, 1000);
+
+
+  </script>
+  
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Chat</title>
+
+
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="css/chatie.css" />
+    <![endif]-->
+
+    <![if !IE]>
+   <link rel="stylesheet" type="text/css" href="css/chat.css" />
+    <![endif]>
+
+
+<link rel="stylesheet" type="text/css" href="js/jScrollPane/jScrollPane.css" />
+<link rel="stylesheet" type="text/css" href="css/page.css" />
+
+
+</head>
+
+<body leftmargin="7">
+
+<div id="chatContainer" style="margin-left:7">
+
+  
+    	<div class="tip"></div>
+        
+        <form id="loginForm" method="post" action="">
+            <input id="name" name="name" class="rounded" maxlength="16" />
+            <input id="email" name="email" class="rounded" />
+            <input type="submit" class="blueButton" value="Login" />
+        </form>
+        
+        <form id="submitForm" method="post" action="">
+            <input id="chatText" name="chatText" class="rounded" maxlength="255" />
+            <input type="submit" class="blueButton" value="Submit" />
+        </form>
+        
+    </div>
+    
+</div>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="js/jScrollPane/jquery.mousewheel.js"></script>
+<script src="js/jScrollPane/jScrollPane.min.js"></script>
+<script src="js/script.js"></script><SCRIPT language=JavaScript>
+    var message = "";
+
+    function clickIE() {
+        if (document.all)
+        { (message); return false; }
+    }
+
+    function clickNS(e) {
+        if
+(document.layers || (document.getElementById && !document.all)) {
+            if (e.which == 2 || e.which == 3) { (message); return false; }
+        }
+    }
+    if (document.layers)
+    { document.captureEvents(Event.MOUSEDOWN); document.onmousedown = clickNS; }
+    else
+    { document.onmouseup = clickNS; document.oncontextmenu = clickIE; }
+
+    document.oncontextmenu = new Function("return false")
+</SCRIPT>
+</body>
+</html>

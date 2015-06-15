@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<broadcastings>
+  <broadcasting title="default">
+    <days>1,2,3,4,5,6,0,</days>
+    <start>14:45</start>
+    <width>750</width>
+    <height>390</height>
+    <loop>yes</loop>
+    <controls>no</controls>
+    <advice>Nothing to broadcast right now</advice>
+    <shift>1</shift>
+    <videos>
+      <video>
+        <ID>DRtdSoeYQYk</ID>
+        <length>3003</length>
+      </video>
+      <video>
+        <ID>Gflb_jSYTV0</ID>
+        <length>3314</length>
+      </video>
+      <video>
+        <ID>bKfsWtJ8R_c</ID>
+        <length>2994</length>
+      </video>
+      <video>
+        <ID>1krztItfcR8</ID>
+        <length>3203</length>
+      </video>
+    </videos>
+  </broadcasting>
+</broadcastings>

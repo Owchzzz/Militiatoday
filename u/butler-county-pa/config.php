@@ -1,0 +1,1 @@
+<?php $adminu = 'butler-county-pa'; $adminp = '10n10s20'; ?>

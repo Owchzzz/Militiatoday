@@ -1,0 +1,125 @@
+/*
+
+
+CSS STRUCTURE:
+
+1. SITE STRUCTURE
+2. MEDIA QUERIES
+
+/*============================================================================================*/
+/* 1. SITE STRUCTURE */
+/*============================================================================================*/
+
+/* #Site Header
+================================================ */
+
+.sixlogo {text-align:center; font-size:38px; font-weight: 500px; padding-top:25px;font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;}
+/*#line_oblique_1{ background:url(../img/line_1.png) no-repeat center -50px; }*/
+.sixteen#logo{ text-align:center; font-size:18px; font-weight: 200px; padding-top:25px;font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;}
+#logo a {background: url(../img/logo.png) no-repeat 0 0; display:block;  text-indent:-9999px; width:180px; height:31px; margin:auto; }
+#video_container,#timer_container {background-color:#000; height:395px; overflow:hidden;}
+#back_in {background:#282828 url(../img/clock.png) no-repeat right center ; padding:20px 10px;}
+
+/* Counter  ================================================================================= */
+#defaultCountdown{}
+.countdown_rtl{direction:rtl;}
+.countdown_row{clear:both;padding:0;text-align:left;width:100%; }
+
+.countdown_section{display:block;  border-bottom:1px solid #1f1f1f; padding: 12px 15px; }
+.countdown_section:last-child{border-bottom:none;}
+.countdown_amount{font-size:38px;font-weight:200; color:#898989; }
+.count_titles{color:#373737;display:block;font-size:26px; float:right; width:70%; text-align:right; font-weight:200; margin-top:10px; }
+
+.playinfos{font-size:14px;font-weight:100; color:#ccc; height: auto: }
+
+
+#form_bg{background:url(../img/bg_form.png) no-repeat top left;height:36px;position:relative;width:342px; margin-left:12px; }
+#form_bg input{background:none;border:none;color:#555;display:block;font-size:12px;left:3px;padding:7px;position:absolute;top:3px;width:230px;font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;}
+.send_bt{background:url(../img/subscribe_bt.png) no-repeat top left;border:none;cursor:pointer;display:block;height:36px;left:259px;position:absolute;text-indent:-9999px;top:0px;width:82px;}
+label.error{background:#ffffe0;border:1px solid #e6db55;color:#333;font-size:11px;line-height:16px;padding:4px 8px; text-align:center; display:none; position:absolute; top: 45px; -webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;}
+.success {font-weight:700;color:#acd373; height:26px; padding-top:10px; padding-left:12px}
+
+/* #Site Footer
+================================================ */
+footer{ display:block; background:url(../img/shadow_video.png) no-repeat center top; margin-top:1px; padding: 50px 0 25px 0;}
+
+ul#follow{float:right;}
+ul#follow li{float:left;margin-right:12px;}
+ul#follow li a{display:block;height:36px;text-indent:-9999px;width:37px;}
+ul#follow li a#tw{background:url(../img/sprite_social.png) no-repeat 0 0;}
+ul#follow li a:hover#tw{background:url(../img/sprite_social.png) no-repeat 0 -42px;}
+ul#follow li a#rss{background:url(../img/sprite_social.png) no-repeat -47px 0;}
+ul#follow li a:hover#rss{background:url(../img/sprite_social.png) no-repeat -47px -42px;}
+ul#follow li a#vimeo{background:url(../img/sprite_social.png) no-repeat -94px 0;}
+ul#follow li a:hover#vimeo{background:url(../img/sprite_social.png) no-repeat -94px -42px;}
+ul#follow li a#fb{background:url(../img/sprite_social.png) no-repeat -141px 0;}
+ul#follow li a:hover#fb{background:url(../img/sprite_social.png) no-repeat -141px -42px;}
+
+#copy{background: url(../img/line.png) no-repeat center top; color:#666666; padding:25px 0; font-size:11px; margin-top:35px; }
+ul#second_nav{ float:right }
+ul#second_nav li{ float:left; margin-left:10px; }
+
+.demo-resizeme{position:fixed;bottom:0;right:0;	width:80px;height:80px;background:transparent url(../img/resize.png) top left no-repeat;z-index:1200;}
+/*============================================================================================*/
+/* 2. MEDIA QUERIES */
+/*============================================================================================*/
+	
+/* Smaller than standard 960 (devices and browsers) ========================================= */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) ================================== */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+#line_oblique_1{ background:url(../img/line_1.png) no-repeat center -100px;}
+#video_container,#timer_container {height:315px}
+footer{ display:block; background:url(../img/shadow_video_2.png) no-repeat center top; margin-top:1px; padding: 50px 0 25px 0;}
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.sixteen#logo{background:url(../img/shadow_top_2.png) no-repeat center top;}
+#line_oblique_1{ background:url(../img/line_1.png) no-repeat center -150px;}
+#video_container {height:270px; position: absolute;}
+#timer_container {height:315px}
+footer{background:url(../img/shadow_video_3.png) no-repeat center top;padding: 50px 0 15px 0;}
+#form_bg{margin:auto; margin-bottom:50px;}
+.success {font-weight:700;color:#acd373; height:26px; padding-top:10px; text-align:center; margin-bottom: 50px;}
+ul#follow{float: none; margin-left:145px;}
+#copy{margin-top:20px; }
+#copy p.five.columns{ text-align:center; margin-bottom:10px;}
+ul#second_nav{ float: none; margin:auto; display:block;  text-align:center; }
+ul#second_nav li{  display:inline; float:none; margin: 0 5px;}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+h1{ color:#969696; font-weight:500; font-size:16px; margin-bottom:15px;}
+.sixteen#logo{background:url() no-repeat center top;}
+#line_oblique_1{ background:url(../img/line_1.png) no-repeat center -150px;}
+#video_container {height:240px}
+#timer_container {height:315px}
+
+#form_bg{background:url(../img/bg_form_2.png) no-repeat top left;height:36px;position:relative;width:280px; margin:auto;}
+#form_bg input{background:none;border:none;color:#555;display:block;font-size:12px;left:3px;padding:7px;position:absolute;top:3px;width:260px;font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;}
+.send_bt{background:url(../img/subscribe_bt_2.png) no-repeat top left;border:none;cursor:pointer;display:block;height:30px;left:100px;position:absolute;text-indent:-9999px;top:78px;width:78px;}
+.success {font-weight:700;color:#acd373; height:26px; padding-top:10px; text-align:center; margin-bottom: 0;}
+.demo-resizeme {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 80px;
+    height: 80px;
+    background: url("img/resize.png") no-repeat scroll left top transparent;
+    z-index: 1200;
+}
+footer{background:url(../img/shadow_video_4.png) no-repeat center top;padding: 50px 0 15px 0;}
+
+ul#follow{float: none; margin-left:80px; margin-top:110px}
+#copy{margin-top:20px; }
+#copy p.five.columns{ text-align:center; margin-bottom:10px;}
+ul#second_nav{ float: none; margin:auto; display:block;  text-align:center; }
+ul#second_nav li{  display:inline; float:none; margin: 0 5px;}
+ul#second_nav li:first-child{ display:none}
+}

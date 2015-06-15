@@ -1,0 +1,1 @@
+[13-May-2015 18:42:39 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/militiatoday/public_html/u/butler-county-pa/admin.php on line 12

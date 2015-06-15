@@ -1,0 +1,2 @@
+[07-May-2015 11:34:59 UTC] PHP Fatal error:  Call to undefined function do_action() in /home/militiatoday/public_html/wp-content/plugins/bepro-listings/templates/listings/generic_2.php on line 3
+[17-May-2015 10:29:17 UTC] PHP Fatal error:  Call to undefined function do_action() in /home/militiatoday/public_html/wp-content/plugins/bepro-listings/templates/listings/generic_1.php on line 3

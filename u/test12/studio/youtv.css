@@ -1,0 +1,202 @@
+html
+{
+	text-align:center;
+width: 100%;
+height: 100%;
+overflow: hidden;
+margin: 0px;
+}
+
+body
+{
+	background-color:#000;
+	color:#fff;
+	display:inline-block;
+	font-family:'Open Sans', sans-serif;
+	font-weight:300;
+	margin:0px;
+	text-align:left;
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+.demo-resizeme{position:fixed;bottom:0;right:0;	width:150px;height:150px;background:transparent url(img/live.png) top left no-repeat;z-index:991200;}
+.demo-s{position:fixed;bottom:0;right:0;	width:150px;height:150px;background:transparent top left no-repeat;z-index:991200;}
+.wrap {
+
+    padding-bottom: 0;
+    padding-top: 0px; height: 0; overflow: hidden;
+width: 100%;
+height: 100%;
+z-index: -300;
+position: absolute;
+
+}
+
+.vanilla-container {
+    position: relative;
+    padding-bottom: 0;
+    padding-top: 0px; height: 0; overflow: hidden;
+width: 100%;
+height: 100%;
+z-index: 110;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 0;
+    padding-top: 0px; height: 0; overflow: hidden;
+width: 100%;
+height: 100%;
+z-index: -10;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+/***********************************************************/
+/* Default frameborder=0 in YouTube embed code is obsolete */
+/***********************************************************/
+iframe
+{
+width: 100%;
+height: 100%;
+overflow: hidden;
+margin: 0px;
+border:none;
+}
+
+
+
+/*******************************************************/
+/* The broadcasting list called by $webtv->playInfo(); */ 
+/*(uses table .ytv_broadcasting.list)                  */
+/*******************************************************/
+.ytv_playinfo
+{
+	background:#4A6BB1;
+	margin-top:-5px;
+	padding:20px;
+	width:600px;
+}
+
+.ytv_broadcasting_list
+{
+	font-size:12px;
+
+}
+
+.ytv_broadcasting_list td, .ytv_broadcasting_list th
+{
+	padding:0 20px;
+}
+
+.ytv_now_playing:before
+{
+	content:"Now playing: ";
+}
+
+.ytv_now_playing
+{
+	font-size:30px;
+}
+
+.ytv_not_playing:before
+{
+	content:"Coming Up Next:";
+}
+
+.ytv_not_playing
+{
+	font-size:30px;
+}
+
+/****************************************************/
+/* Thumbnails column called by $webtv->playThumb(); */
+/****************************************************/
+.ytv_thumbnail_column
+{
+	background:#4B0D63;
+	float:left;
+	font-size:25px;
+	margin-top:100px;
+	padding:20px 0;
+	text-align:center;
+	width:400px;
+}
+
+.ytv_video_thumbnail
+{
+	border:4px solid #000;
+	margin:20px auto;
+	overflow:hidden; !important
+}
+
+.ytv_thumbnail_column .ytv_thumbnail_title
+{
+	background:#000;
+	font-size:12px;
+	margin:0;
+	opacity:0.8;
+	padding:0 0 10px 5px;
+	text-align:left;
+}
+
+.ytv_thumbnail_column .ytv_thumbnail_time
+{
+	font-size:16px;
+	font-weight:700;
+	margin:-25px 10px 3px 0;
+	opacity:0.8;
+	text-align:right;
+}
+
+.ytv_thumbnail_column .ytv_thumbnail_description
+{
+	background:#000;
+	font-size:12px;
+	height:133px;
+	margin:0;
+	opacity:0;
+	padding:10px;
+	text-align:left;
+	width:300px;
+}
+
+.ytv_thumbnail_column .ytv_thumbnail_description:hover
+{
+	opacity:0.8;
+}
+
+.ytv_thumbnail_column:before
+{
+	content:"Channel Lineup:";
+}
+
+/**************************************************************/
+/* The advice that appears when there is nothing to broadcast */
+/**************************************************************/
+.ytv_advice
+{
+	font-size:50px;
+	height:270px;
+	padding:60px 60px 60px 20px;
+	width:520px;
+}
+
+/*********************/
+/* Just a custom DIV */
+/*********************/
+.ytv_custom_div
+{
+	background:#E08D32;
+	float:left;
+	font-size:40px;
+	padding:20px;
+	width:600px;
+}

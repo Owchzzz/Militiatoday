@@ -1,0 +1,15 @@
+.theme-layout
+{
+width: 200px;
+float: left;
+}
+
+.theme-layout input
+{
+float: left;
+}
+
+p.submit
+{
+clear: both
+}

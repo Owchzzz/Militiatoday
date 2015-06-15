@@ -1,0 +1,255 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Northern-Clouds v1.2.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2012-09-28 09:21:08+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: comments.php:9
+#@ northern
+msgid "Protected Comments: Please enter your password to view comments."
+msgstr "Geschützte Kommentare: Bitte geben Sie Ihr Passwort ein, um Kommentare lesen."
+
+#: comments.php:27
+#@ northern
+msgid "&laquo; Older Comments"
+msgstr "&laquo; Ältere Kommentare"
+
+#: comments.php:27
+#@ northern
+msgid "Newer Comments &raquo;"
+msgstr "Neuere Kommentare &raquo;"
+
+#: functions.php:14
+#@ northern
+msgid "Primary Menu"
+msgstr "Hauptmenü"
+
+#: functions.php:168
+#: sidebar.php:2
+#@ northern
+msgid "Sidebar Blog"
+msgstr "Sidebar Blog"
+
+#: functions.php:178
+#: sidebar-2.php:2
+#@ northern
+msgid "Sidebar Page"
+msgstr "Sidebar Page"
+
+#: header.php:23
+#, php-format
+#@ northern
+msgid "Page %s"
+msgstr "Seite %s"
+
+#: archive.php:23
+#: attachment.php:12
+#: category.php:16
+#: home.php:14
+#: index.php:14
+#: page.php:12
+#: search.php:16
+#: single.php:14
+#: tag.php:16
+#@ northern
+msgid "Edit This"
+msgstr "Bearbeiten"
+
+#: archive.php:26
+#: attachment.php:14
+#: category.php:19
+#: home.php:16
+#: index.php:17
+#: search.php:18
+#: single.php:17
+#: tag.php:18
+#@ northern
+msgid "Published on:"
+msgstr "Veröffentlicht am:"
+
+#: archive.php:27
+#: category.php:20
+#: home.php:17
+#: index.php:18
+#: search.php:19
+#: single.php:18
+#: tag.php:19
+#@ northern
+msgid "Categories:"
+msgstr "Kategorien:"
+
+#: archive.php:27
+#: category.php:20
+#: home.php:17
+#: index.php:18
+#: search.php:19
+#: single.php:18
+#: tag.php:19
+#@ northern
+msgid "Tags:&nbsp;"
+msgstr "Tags:&nbsp;"
+
+#: archive.php:31
+#: category.php:24
+#: home.php:21
+#: index.php:22
+#: page.php:17
+#: search.php:23
+#: single.php:22
+#: tag.php:23
+#@ northern
+msgid "(more...)"
+msgstr "(weiterlesen...)"
+
+#: archive.php:35
+#: category.php:28
+#: home.php:25
+#: index.php:26
+#: search.php:27
+#: single.php:26
+#: tag.php:27
+#@ northern
+msgid "No Comments"
+msgstr "Kein Kommentar"
+
+#: archive.php:35
+#: category.php:28
+#: home.php:25
+#: index.php:26
+#: search.php:27
+#: single.php:26
+#: tag.php:27
+#@ northern
+msgid "1 Comment"
+msgstr "ein Kommentar"
+
+#: archive.php:35
+#: category.php:28
+#: home.php:25
+#: index.php:26
+#: search.php:27
+#: single.php:26
+#: tag.php:27
+#@ northern
+msgid "% Comments"
+msgstr "% Kommentare"
+
+#: archive.php:35
+#: category.php:28
+#: home.php:25
+#: index.php:26
+#: search.php:27
+#: single.php:26
+#: tag.php:27
+#@ northern
+msgid "Comments are closed."
+msgstr "Kommentare sind geschlossen."
+
+#: search.php:34
+#@ northern
+msgid "Not Found"
+msgstr "Nichts gefunden"
+
+#: 404.php:5
+#@ northern
+msgid "Error 404 - Page Not Found!"
+msgstr "Fehler 404 - Seite nicht gefunden!"
+
+#: search.php:36
+#@ northern
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "Sorry, aber es wurde nichts gefunden, was Ihren Suchkriterien entsprechen. Bitte versuchen Sie es erneut mit einem anderen Suchbegriff."
+
+#: 404.php:7
+#@ northern
+msgid "The requested page  was not found."
+msgstr "Die angeforderte Seite wurde nicht gefunden."
+
+#: attachment.php:49
+#@ northern
+msgid "&laquo; Previous"
+msgstr "&laquo; zurück"
+
+#: attachment.php:50
+#@ northern
+msgid "Next &raquo;"
+msgstr "weiter &raquo;"
+
+#: category.php:5
+#@ northern
+msgid "Category Archives:"
+msgstr "Kategorie Archiv:"
+
+#: tag.php:5
+#@ northern
+msgid "Tag Archiv:"
+msgstr "Schlagwort Archiv:"
+
+#: comments.php:18
+#@ northern
+msgid "1 Comment to"
+msgstr "Ein Kommentar zu"
+
+#: comments.php:18
+#@ northern
+msgid "% Comments to"
+msgstr "% Kommentare zu"
+
+#: search.php:5
+#@ northern
+msgid "Search results for:"
+msgstr "Suchergebnisse für:"
+
+#: functions.php:209
+#@ northern
+msgid "You are here:"
+msgstr "Sie sind hier:"
+
+#: functions.php:44
+#@ northern
+msgid "clouds"
+msgstr "Wolken"
+
+#: functions.php:49
+#@ northern
+msgid "clouds2"
+msgstr "Wolken 2"
+
+#: functions.php:54
+#@ northern
+msgid "clouds3"
+msgstr "Wolken 3"
+
+#: archive.php:7
+#, php-format
+#@ northern
+msgid "Daily Archiv: %s"
+msgstr "Tages Archiv: %s"
+
+#: archive.php:8
+#, php-format
+#@ northern
+msgid "Monthly Archiv: %s"
+msgstr "Monats Archiv: %s"
+
+#: archive.php:9
+#, php-format
+#@ northern
+msgid "Yearly Archiv: %s"
+msgstr "Jahres Archiv: %s"
+

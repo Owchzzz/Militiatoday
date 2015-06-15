@@ -1,0 +1,1 @@
+<?php $adminu = 'demo'; $adminp = 'russia'; ?>

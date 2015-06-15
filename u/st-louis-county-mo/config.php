@@ -1,0 +1,1 @@
+<?php $adminu = 'st-louis-county-mo'; $adminp = '10n10s20'; ?>
