@@ -36,7 +36,7 @@ if(!class_exists('CountyFunc_loader')) {
 
 			if($installed_ver !== $this->version) { // Perform updated TABLE Struct
 				$this->table_name;
-				$this->create_ratable_func($table_name);
+				$this->create_ratable_func($this->table_name);
 				
 				update_option('RACounty_dbversion',$this->version);
 			}
@@ -49,9 +49,11 @@ if(!class_exists('CountyFunc_loader')) {
 			$charset_collate = $wpdb->get_charset_collate();
 
 			$sql = "CREATE TABLE $table_name (
-				id mediumint(9) NOT NULL AUTO_INCREMENT,
-				established datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
-				name text NOT NULL,
+				`id` mediumint(9) NOT NULL AUTO_INCREMENT,
+				`established` datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+				`county_name` text NOT NULL,
+				`state` text NOT NULL,
+				`desc` text NULL,
 				UNIQUE KEY id (id)
 				) $charset_collate;";
 
